@@ -84,7 +84,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias n="nvidia-smi"
 alias ga="git add -A"
-alias gp="git push"
+alias gm="git commit -m"
+alias gps="git push"
+alias gpl="git pull"
 alias h="htop"
 
 # putting home/end to work
