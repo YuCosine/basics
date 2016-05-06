@@ -87,6 +87,7 @@ alias ga="git add -A"
 alias gm="git commit -m"
 alias gps="git push"
 alias gpl="git pull"
+alias gst="git status"
 alias h="htop"
 
 # putting home/end to work
@@ -117,3 +118,7 @@ if [[ "$TERM" != emacs ]]; then
 [[ "$terminfo[khome]" == "^[O"* ]] && bindkey -M emacs "${terminfo[khome]/O/[}" beginning-of-line
 [[ "$terminfo[kend]" == "^[O"* ]] && bindkey -M emacs "${terminfo[kend]/O/[}" end-of-line
 fi
+
+export CUDAHOME=/usr/local/cuda
+export PATH=$PATH:$CUDAHOME/bin
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDAHOME/lib64
