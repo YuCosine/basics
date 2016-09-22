@@ -89,6 +89,7 @@ alias gps="git push"
 alias gpl="git pull"
 alias gst="git status"
 alias h="htop"
+alias count="ls -l |grep "^-"|wc -l"
 
 # putting home/end to work
 if [[ "$TERM" != emacs ]]; then
