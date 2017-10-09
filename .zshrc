@@ -90,6 +90,7 @@ alias gpl="git pull"
 alias gst="git status"
 alias h="htop"
 alias count="ls -l |grep "^-"|wc -l"
+alias storage="du -h --max-depth=1"
 
 # putting home/end to work
 if [[ "$TERM" != emacs ]]; then
@@ -121,5 +122,7 @@ if [[ "$TERM" != emacs ]]; then
 fi
 
 export CUDAHOME=/usr/local/cuda
+export CUDA_HOME=/usr/local/cuda
 export PATH=$PATH:$CUDAHOME/bin
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDAHOME/lib64
+export THEANO_FLAGS=device=gpu1,floatX=float32
