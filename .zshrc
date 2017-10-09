@@ -125,5 +125,5 @@ export CUDAHOME=/usr/local/cuda
 export CUDA_HOME=/usr/local/cuda
 export PATH=$PATH:$CUDAHOME/bin
 export MKL_LIBRARY=/opt/intel/mkl/lib/intel64
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDAHOME/lib64:MKL_LIBRARY
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDAHOME/lib64:MKL_LIBRARY:/opt/intel/intelpython27/lib
 export THEANO_FLAGS=device=gpu1,floatX=float32
