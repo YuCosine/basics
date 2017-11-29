@@ -10,5 +10,8 @@
 		"Vintage"
 	],
 	"update_check": false,
-	"word_wrap": true
+	"word_wrap": true,
+	"indent_to_bracket": true,
+	"translate_tabs_to_spaces": true,
+	"tab_size": 4
 }
