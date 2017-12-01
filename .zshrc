@@ -91,6 +91,10 @@ alias gst="git status"
 alias h="htop"
 alias count="ls -l |grep "^-"|wc -l"
 alias storage="du -h --max-depth=1"
+alias tmuxn="tmux new -s"
+alias tmuxa="tmux attach -t"
+alias tmuxl="tmux ls"
+alias tmuxd="tmux detach"
 
 # putting home/end to work
 if [[ "$TERM" != emacs ]]; then
@@ -130,4 +134,4 @@ export THEANO_FLAGS=device=gpu1,floatX=float32
 
 # language
 export LANGUAGE='zh_CN:zh:en_US:en'
-export LANG=zh_CN.UTF
+export LANG=zh_CN.UTF-8
