@@ -127,3 +127,7 @@ export PATH=$PATH:$CUDAHOME/bin
 export MKL_LIBRARY=/opt/intel/mkl/lib/intel64
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CUDAHOME/lib64:MKL_LIBRARY:/opt/intel/intelpython27/lib
 export THEANO_FLAGS=device=gpu1,floatX=float32
+
+# language
+export LANGUAGE='zh_CN:zh:en_US:en'
+export LANG=zh_CN.UTF
