@@ -46,3 +46,5 @@ set smartindent
 set ruler
 set autoindent
 set cindent
+set enc=utf8
+set fencs=utf8,gbk,gb2312,gb18030,cp936
