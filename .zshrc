@@ -125,6 +125,10 @@ if [[ "$TERM" != emacs ]]; then
 [[ "$terminfo[kend]" == "^[O"* ]] && bindkey -M emacs "${terminfo[kend]/O/[}" end-of-line
 fi
 
+# tmux create new window in current path
+tmux bind-key '"' splitw -v -c '#{pane_current_path}'
+tmux bind-key % splitw -h -c '#{pane_current_path}'
+
 export CUDAHOME=/usr/local/cuda
 export CUDA_HOME=/usr/local/cuda
 export PATH=$PATH:$CUDAHOME/bin
