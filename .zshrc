@@ -95,6 +95,8 @@ alias tmuxn="tmux new -s"
 alias tmuxa="tmux attach -t"
 alias tmuxl="tmux ls"
 alias tmuxd="tmux detach"
+alias wg="watch --color -n 1.0 gpustat -p --color"
+alias cg="sudo nvidia-smi -pm 1"
 
 # putting home/end to work
 if [[ "$TERM" != emacs ]]; then
