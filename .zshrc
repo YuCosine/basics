@@ -97,6 +97,8 @@ alias tmuxl="tmux ls"
 alias tmuxd="tmux detach"
 alias wg="watch --color -n 1.0 gpustat -p --color"
 alias cg="sudo nvidia-smi -pm 1"
+alias cdt="cd /home/trunk/RTrunk0/yuxintong"
+alias trk="/home/trunk/RTrunk0/yuxintong"
 
 # putting home/end to work
 if [[ "$TERM" != emacs ]]; then
